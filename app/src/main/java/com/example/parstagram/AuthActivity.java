@@ -1,15 +1,14 @@
 package com.example.parstagram;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.parse.ParseUser;
 
@@ -42,7 +41,7 @@ public class AuthActivity extends AppCompatActivity {
                 // Begin the transaction
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 // Replace the contents of the container with the new fragment
-                ft.replace(R.id.fragmentContainer, new SignUpFragment())
+                ft.replace(R.id.auth_container, new SignUpFragment())
                         .addToBackStack("SignUpFragment")
                         .commit();
             }
@@ -55,7 +54,7 @@ public class AuthActivity extends AppCompatActivity {
                 // Begin the transaction
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 // Replace the contents of the container with the new fragment
-                ft.replace(R.id.fragmentContainer, new LoginFragment())
+                ft.replace(R.id.auth_container, new LoginFragment())
                         .addToBackStack("LoginFragment")
                         .commit();
             }

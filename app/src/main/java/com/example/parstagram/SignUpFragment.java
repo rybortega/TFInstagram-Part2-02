@@ -2,11 +2,6 @@ package com.example.parstagram;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -19,8 +14,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.material.textfield.TextInputLayout;
-import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -87,7 +85,7 @@ public class SignUpFragment extends Fragment {
             public void onClick(View v) {
                 Objects.requireNonNull(getActivity()).getSupportFragmentManager().popBackStack();
                 Objects.requireNonNull(getActivity()).getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragmentContainer, new LoginFragment())
+                        .replace(R.id.auth_container, new LoginFragment())
                         .addToBackStack(null)
                         .commit();
             }

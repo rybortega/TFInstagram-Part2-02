@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="125dp"
-        app:srcCompat="@drawable/nav_logo_whiteout" />
+        app:srcCompat="@drawable/nav_logo_whiteout"
+        android:contentDescription="@string/instagram_logo"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tiUsernameSignUp"

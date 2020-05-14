@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -89,7 +88,7 @@ public class LoginFragment extends Fragment {
             public void onClick(View v) {
                 Objects.requireNonNull(getActivity()).getSupportFragmentManager().popBackStack();
                 Objects.requireNonNull(getActivity()).getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragmentContainer, new SignUpFragment())
+                        .replace(R.id.auth_container, new SignUpFragment())
                         .addToBackStack(null)
                         .commit();
             }
