@@ -18,4 +18,6 @@
 
     <color name="colorButtonLogin">#0095f6</color>
     <color name="colorAccent">#3897f1</color>
+
+    <color name="transparent">#00000000</color>
 </resources>

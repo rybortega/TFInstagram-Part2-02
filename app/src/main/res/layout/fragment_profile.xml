@@ -2,62 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/profileToolbar"
+        android:id="@+id/toolbarProfile"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:contentInsetLeft="0dp"
-        app:contentInsetEnd="0dp"
-        app:contentInsetStart="0dp"
-        app:contentInsetEndWithActions="0dp"
-        app:contentInsetRight="0dp"
-        app:contentInsetStartWithNavigation="0dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/ibToolbarLogo"
-                android:layout_width="110dp"
-                android:layout_height="45dp"
-                android:padding="3dp"
-                android:scaleType="fitCenter"
-                android:layout_marginStart="5dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/instagram_logo"
-                app:srcCompat="@drawable/nav_logo_whiteout" />
-
-            <ImageButton
-                android:id="@+id/ibDirect"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_centerVertical="true"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/instagram_logo"
-                android:layout_marginEnd="10dp"
-                android:padding="5dp"
-                app:srcCompat="@drawable/direct"
-                android:layout_alignParentEnd="true"/>
-        </RelativeLayout>
+        android:layout_height="wrap_content">
 
     </com.google.android.material.appbar.MaterialToolbar>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvProfileHeader"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profile page goes here"
-        android:layout_centerInParent="true"/>
+        android:text="My Posts"
+        android:layout_below="@+id/toolbarProfile"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profileToolbar"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="Logout" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvProfileHeader"
+        android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

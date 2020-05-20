@@ -1,8 +1,7 @@
-package com.example.parstagram;
+package com.example.parstagram.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -22,6 +21,8 @@ import androidx.annotation.Nullable;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
+import com.example.parstagram.models.Post;
+import com.example.parstagram.R;
 import com.google.android.material.textfield.TextInputLayout;
 import com.parse.ParseException;
 import com.parse.ParseFile;
@@ -49,6 +50,8 @@ public class NewPostFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
         ivPreview = view.findViewById(R.id.ivPreview);
         tiDescription = view.findViewById(R.id.tiDescription);
         btnTakePhoto = view.findViewById(R.id.btnTakePhoto);

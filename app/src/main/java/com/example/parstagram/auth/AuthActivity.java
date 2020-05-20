@@ -1,4 +1,4 @@
-package com.example.parstagram;
+package com.example.parstagram.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.parstagram.MainActivity;
+import com.example.parstagram.R;
 import com.parse.ParseUser;
 
 

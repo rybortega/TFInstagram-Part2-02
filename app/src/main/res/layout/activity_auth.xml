@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/auth_container"
-    tools:context=".AuthActivity">
+    tools:context=".auth.AuthActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
