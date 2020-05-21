@@ -48,6 +48,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+Part 2:
+
+<img src='https://github.com/jyanghua/Parstagram/blob/master/docs/gifs/Parstagram_part2.gif' title='Video Walkthrough of Part 2' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 Part 1:
 
 <img src='https://github.com/jyanghua/Parstagram/blob/master/docs/gifs/Parstagram_part1.gif' title='Video Walkthrough of Part 1' width='' alt='Video Walkthrough' />
